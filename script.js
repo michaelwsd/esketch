@@ -20,9 +20,14 @@ container.style.backgroundColor = bgColor;
 
 // generate new grid
 grid_btn.addEventListener("click", () => {
-    const size = parseInt(grid_size.value);
-    gridSize = size > 60 ? null : size;
-    createGrid(gridSize);
+    const size = grid_size.value.trim();
+
+    if (size == "" || size == gridSize) {
+        return;
+    } else {
+        gridSize = size > 60 ? null : size;
+        createGrid(gridSize);
+    }
 })
 
 // create grids
