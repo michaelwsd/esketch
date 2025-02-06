@@ -110,7 +110,6 @@ random_color.addEventListener("click", () => {
 // main function
 function main() {
     createGrid(null);
-
     for (i = 0; i < gridCount; i++) {
         grid_items[i].addEventListener("click", drawClick);
         grid_items[i].addEventListener("mouseenter", drawClickHover);
