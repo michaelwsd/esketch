@@ -35,7 +35,8 @@ body {
 .header {
     font-size: 20px;
     text-align: center;
-    color: rgb(62, 166, 255);;
+    color: rgb(62, 166, 255);
+    margin-bottom: 20px;
 }
 
 .grid-container {
@@ -55,6 +56,11 @@ body {
     border: 1px solid #ccc;
 }
 
+.toggleColor {
+    background-color: rgb(62, 166, 255);
+    color: white;
+}
+
 button {
     width: 300px;
     height: 50px;
@@ -63,4 +69,16 @@ button {
 #gridSize {
     height: 30px;
     text-align: center;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-container {
+        width: 300px;
+        height: 300px;
+    }
 }
